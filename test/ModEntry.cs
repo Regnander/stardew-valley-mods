@@ -103,7 +103,7 @@ namespace CraftCasksWithoutACellar
             if (Config.EnableLogging)
             {
                 // Printing the given message to the log.
-                this.Monitor.Log(message, LogLevel.Info);
+                this.Monitor.Log(message, LogLevel.Debug);
             }
         }
 
