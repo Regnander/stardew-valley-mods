@@ -1,4 +1,4 @@
-﻿namespace CraftCasksWithoutACellar
+﻿namespace UnlockCasksWithoutACellar
 {
     public sealed class ModConfig
     {

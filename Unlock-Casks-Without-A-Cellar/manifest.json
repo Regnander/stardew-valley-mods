@@ -1,0 +1,10 @@
+{
+  "Name": "Unlock Casks Without a Cellar",
+  "Author": "Regnander",
+  "Version": "1.0.0",
+  "Description": "Unlock casks without having to upgrade your farmhouse.",
+  "UniqueID": "regnander.unlock-casks-without-a-cellar",
+  "EntryDll": "unlock-casks-without-a-cellar.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}

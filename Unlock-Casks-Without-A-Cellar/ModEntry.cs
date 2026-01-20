@@ -3,7 +3,7 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
 
-namespace CraftCasksWithoutACellar
+namespace UnlockCasksWithoutACellar
 {
     /// <summary>The mod entry point.</summary>
     internal sealed class ModEntry : Mod
