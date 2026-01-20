@@ -5,6 +5,6 @@
 	"config.minimum_level.notice": "Important: This setting does not affect players who have already learned the Cask recipe. It only affects those who have not yet reached it.",
 	"config.minimum_level.tooltip": "The minimum level of this skill needed to unlock the Cask recipe. Set to 0 to disable this skill.",
 	"log.requirements_met": "{0} has unlocked the Cask recipe.",
-	"log.requirements_not_met": "{0} hasn't reached all skill levels",
+	"log.requirements_not_met": "{0} hasn't reached all skill levels:",
 	"log.requirements_not_met_unlocked": "{0} already has the Cask recipe, but current requirements are higher. The recipe will NOT be removed."
 }

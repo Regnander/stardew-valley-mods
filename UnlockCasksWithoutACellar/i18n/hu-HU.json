@@ -5,6 +5,6 @@
 	"config.minimum_level.notice": "Megjegyzés: Ez a beállítás nem vonatkozik azokra a játékosokra, akik már megtanulták a(z) Fahordó receptjét. Csak azokra vonatkozik, akik még nem érték el azt.",
 	"config.minimum_level.tooltip": "A képesség minimális szintje a(z) Fahordó receptjének feloldásához. A letiltáshoz állítsd 0-ra.",
 	"log.requirements_met": "{0} feloldotta a(z) Fahordó receptjét.",
-	"log.requirements_not_met": "{0} nem érte el az összes képzettségi szintet",
+	"log.requirements_not_met": "{0} nem érte el az összes képzettségi szintet:",
 	"log.requirements_not_met_unlocked": "A(z) {0} már rendelkezik a(z) Fahordó recepttel, de a jelenlegi követelmények magasabbak. A recept NEM lesz eltávolítva."
 }

@@ -5,6 +5,6 @@
 	"config.minimum_level.notice": "Hinweis: Diese Einstellung betrifft nicht Spieler, die das Rezept für Reifefass bereits gelernt haben. Sie betrifft nur diejenigen, die es noch nicht erreicht haben.",
 	"config.minimum_level.tooltip": "Die Mindeststufe dieser Fertigkeit, die zum Freischalten des Rezepts für Reifefass erforderlich ist. Auf 0 setzen, um diese Fertigkeit zu deaktivieren.",
 	"log.requirements_met": "{0} hat das Rezept für Reifefass freigeschaltet.",
-	"log.requirements_not_met": "{0} hat noch nicht alle Fähigkeitsstufen erreicht",
+	"log.requirements_not_met": "{0} hat noch nicht alle Fähigkeitsstufen erreicht:",
 	"log.requirements_not_met_unlocked": "{0} enthält bereits das Rezept für Reifefass, aber die aktuellen Anforderungen sind höher. Das Rezept wird NICHT entfernt."
 }

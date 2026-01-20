@@ -5,6 +5,6 @@
 	"config.minimum_level.notice": "Not: Bu ayar, Varil tarifini zaten öğrenmiş olan oyuncuları etkilemez. Sadece henüz ona ulaşmamış olanları etkiler.",
 	"config.minimum_level.tooltip": "Varil tarifinin kilidini açmak için gereken minimum beceri seviyesi. Bu beceriyi devre dışı bırakmak için 0 olarak ayarlayın.",
 	"log.requirements_met": "{0}, Varil tarifinin kilidini açtı.",
-	"log.requirements_not_met": "{0} tüm beceri seviyelerine ulaşmadı",
+	"log.requirements_not_met": "{0} tüm beceri seviyelerine ulaşmadı:",
 	"log.requirements_not_met_unlocked": "{0} zaten Varil tarifine sahip, ancak mevcut gereksinimler daha yüksek. Tarif kaldırılmayacak."
 }

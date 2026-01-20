@@ -5,6 +5,6 @@
 	"config.minimum_level.notice": "Nota: Questa impostazione non ha effetto sui giocatori che hanno già imparato la ricetta per Botte. Ha effetto solo su coloro che non l'hanno ancora ottenuta.",
 	"config.minimum_level.tooltip": "Il livello minimo di questa abilità necessario per sbloccare la ricetta per Botte. Imposta su 0 per disabilitare questa abilità.",
 	"log.requirements_met": "{0} ha sbloccato la ricetta per Botte.",
-	"log.requirements_not_met": "{0} non ha raggiunto tutti i livelli di abilità",
+	"log.requirements_not_met": "{0} non ha raggiunto tutti i livelli di abilità:",
 	"log.requirements_not_met_unlocked": "{0} ha già la ricetta Botte, ma i requisiti attuali sono più elevati. La ricetta NON verrà rimossa."
 }

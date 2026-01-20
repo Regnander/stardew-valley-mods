@@ -5,6 +5,6 @@
 	"config.minimum_level.notice": "Remarque : Ce paramètre n'affecte pas les joueurs qui ont déjà appris la recette de Fût. Il affecte uniquement ceux qui ne l'ont pas encore atteinte.",
 	"config.minimum_level.tooltip": "Niveau minimum requis pour débloquer la recette de Fût. Indiquez 0 pour désactiver cette compétence.",
 	"log.requirements_met": "{0} a débloqué la recette pour Fût.",
-	"log.requirements_not_met": "{0} n'a pas atteint tous les niveaux de compétence",
+	"log.requirements_not_met": "{0} n'a pas atteint tous les niveaux de compétence:",
 	"log.requirements_not_met_unlocked": "{0} possède déjà la recette de Fût, mais les exigences actuelles sont plus élevées. La recette ne sera PAS supprimée."
 }
