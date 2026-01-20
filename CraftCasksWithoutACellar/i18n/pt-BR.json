@@ -1,3 +1,10 @@
 ﻿{
 	"config.enable_logging.title": "Habilitar Log",
+	"config.enable_logging.tooltip": "As mensagens de registro aparecerão no console quando essa configuração estiver ativada.",
+	"config.minimum_level.header": "Requisitos para cada nível",
+	"config.minimum_level.notice": "Observação: Essa configuração não afeta os jogadores que já aprenderam a receita para Barril de madeira. Ela afeta apenas aqueles que ainda não a alcançaram.",
+	"config.minimum_level.tooltip": "O nível mínimo desta habilidade necessário para desbloquear a receita para Barril de madeira. Defina como 0 para desativar esta habilidade.",
+	"log.requirements_met": "{0} desbloqueou a receita para Barril de madeira.",
+	"log.requirements_not_met": "{0} não atingiu todos os níveis de habilidade",
+	"log.requirements_not_met_unlocked": "{0} já possui a receita Barril de madeira, mas os requisitos atuais são maiores. A receita NÃO será removida."
 }

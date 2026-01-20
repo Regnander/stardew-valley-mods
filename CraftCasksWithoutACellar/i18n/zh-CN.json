@@ -1,3 +1,10 @@
 ﻿{
 	"config.enable_logging.title": "启用记录",
+	"config.enable_logging.tooltip": "启用此设置后，日志消息将显示在控制台中。",
+	"config.minimum_level.header": "各级别要求",
+	"config.minimum_level.notice": "注意: 此设置不会影响已经学会木桶配方的玩家，只会影响尚未学会该配方的玩家。",
+	"config.minimum_level.tooltip": "解锁木桶配方所需的该技能最低等级。设置为0可禁用该技能。",
+	"log.requirements_met": "玩家 {0} 已解锁木桶的配方。",
+	"log.requirements_not_met": "玩家{0}尚未达到所有技能等级",
+	"log.requirements_not_met_unlocked": "{0} 已经有了 木桶 的配方，但目前的要求更高。该配方不会被移除。"
 }

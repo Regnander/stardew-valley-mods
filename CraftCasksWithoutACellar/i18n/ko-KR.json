@@ -1,3 +1,10 @@
 ﻿{
 	"config.enable_logging.title": "로깅 사용",
+	"config.enable_logging.tooltip": "이 설정을 활성화하면 로그 메시지가 콘솔에 표시됩니다.",
+	"config.minimum_level.header": "각 레벨별 요구 사항",
+	"config.minimum_level.notice": "참고: 이 설정은 숙성용 나무통의 제조법을 이미 습득한 플레이어에게는 영향을 미치지 않습니다. 아직 해당 제조법을 습득하지 못한 플레이어에게만 영향을 미칩니다.",
+	"config.minimum_level.tooltip": "숙성용 나무통의 레시피를 해금하는 데 필요한 최소 스킬 레벨입니다. 0으로 설정하면 이 스킬이 비활성화됩니다.",
+	"log.requirements_met": "{0}이 숙성용 나무통의 레시피를 잠금 해제했습니다.",
+	"log.requirements_not_met": "{0}은 모든 기술 수준에 도달하지 못했습니다",
+	"log.requirements_not_met_unlocked": "{0}은 이미 숙성용 나무통 레시피를 가지고 있지만 현재 요구 사항이 더 높습니다. 해당 레시피는 삭제되지 않습니다."
 }

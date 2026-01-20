@@ -103,7 +103,7 @@ namespace CraftCasksWithoutACellar
             if (Config.EnableLogging)
             {
                 // Printing the given message to the log.
-                this.Monitor.Log(message, LogLevel.Debug);
+                this.Monitor.Log(message, LogLevel.Info);
             }
         }
 
@@ -152,8 +152,7 @@ namespace CraftCasksWithoutACellar
         /// required.</param>
         /// <returns>A localized and formatted string corresponding to the specified key. If the key is not found, the original
         /// key is returned.</returns>
-        private string GetLocalizedString(string key, object? tokens = null) => String.Format(this.Helper.Translation.Get(key), tokens);
-
+        private string GetLocalizedString(string key, params object[] tokens) => String.Format(this.Helper.Translation.Get(key), tokens);
 
         /// <summary>
         /// Handles the event that occurs when the game is launched, registering the mod's configuration options with
@@ -190,7 +189,7 @@ namespace CraftCasksWithoutACellar
             // Adding notice.
             configMenu.AddParagraph(
                 mod: this.ModManifest,
-                text: () => GetLocalizedString("config.notice")
+                text: () => GetLocalizedString("config.minimum_level.notice")
             );
 
             // Adding skill level sliders.

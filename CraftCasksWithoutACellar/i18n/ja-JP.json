@@ -1,3 +1,10 @@
 ﻿{
 	"config.enable_logging.title": "ログを有効にする",
+	"config.enable_logging.tooltip": "この設定を有効にすると、コンソールにログ メッセージが表示されます。",
+	"config.minimum_level.header": "各レベルの要件",
+	"config.minimum_level.notice": "注意：この設定は、熟成ダルのレシピを既に習得しているプレイヤーには影響しません。まだ習得していないプレイヤーにのみ影響します。",
+	"config.minimum_level.tooltip": "熟成ダルのレシピをアンロックするために必要なこのスキルの最低レベル。このスキルを無効にするには0に設定します。",
+	"log.requirements_met": "{0} が熟成ダルのレシピをアンロックしました。",
+	"log.requirements_not_met": "{0} はすべてのスキル レベルに到達していません",
+	"log.requirements_not_met_unlocked": "プレイヤー{0}はすでに熟成ダルのレシピを所持していますが、現在の要件はより高くなっています。レシピは削除されません。"
 }

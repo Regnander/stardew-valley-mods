@@ -1,3 +1,10 @@
 ﻿{
 	"config.enable_logging.title": "Habilitar registro",
+	"config.enable_logging.tooltip": "Los mensajes de registro aparecerán en la consola cuando esta configuración esté habilitada.",
+	"config.minimum_level.header": "Requisito para cada nivel",
+	"config.minimum_level.notice": "Nota: Esta configuración no afecta a los jugadores que ya han aprendido la receta de Tonel. Solo afecta a quienes aún no la han alcanzado.",
+	"config.minimum_level.tooltip": "El nivel mínimo de esta habilidad es necesario para desbloquear la receta de Tonel. Establécelo en 0 para desactivarla.",
+	"log.requirements_met": "{0} ha desbloqueado la receta de Tonel.",
+	"log.requirements_not_met": "{0} no ha alcanzado todos los niveles de habilidad",
+	"log.requirements_not_met_unlocked": "{0} ya tiene la receta de Tonel, pero los requisitos actuales son mayores. La receta NO se eliminará."
 }
