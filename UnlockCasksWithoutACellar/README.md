@@ -1,8 +1,8 @@
 ﻿# Unlock Casks Without a Cellar
 
-Want to start aging wine before you have a cellar? Now you can!
+***Note: This mod has only been tested on local multiplayer.***
 
-This mod allows you to set skill level requirements when to unlock the Cask crafting recipe instead of waiting for the final farmhouse upgrade.
+Want to start aging wine and cheese, but love your house just the way it is? Instead of being forced to expand your home, this mod allows you to unlock Casks by reaching skill levels of your choice.
 
 By default, casks will not age items unless they are placed in the cellar. You need to install a mod that enables aging in any location (for example [Custom Cask Mod](https://www.nexusmods.com/stardewvalley/mods/2642)) alongside this mod.
 

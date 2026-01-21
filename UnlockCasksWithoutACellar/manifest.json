@@ -6,5 +6,5 @@
   "UniqueID": "regnander.unlock-casks-without-a-cellar",
   "EntryDll": "unlockcaskswithoutacellar.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [ "Nexus:41494" ]
 }
