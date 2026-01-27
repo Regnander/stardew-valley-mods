@@ -1,4 +1,4 @@
-﻿# Auto-Accept "Help Wanted" Quests
+﻿# Auto-Accept 'Help Wanted' Quests
 
 ***Note: This mod has only been tested on local multiplayer.***
 

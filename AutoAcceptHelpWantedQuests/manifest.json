@@ -6,5 +6,5 @@
   "UniqueID": "regnander.Accept-Help-Wanted-Quests-Automatically",
   "EntryDll": "autoaccepthelpwantedquests.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": [ "Nexus:0" ]
+  "UpdateKeys": [ "Nexus:41725" ]
 }
