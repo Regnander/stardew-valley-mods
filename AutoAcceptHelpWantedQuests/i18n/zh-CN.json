@@ -1,0 +1,11 @@
+﻿{
+	"notification": "新的“需要帮助”任务",
+	"config.enable.title": "启用",
+	"config.enable.tooltip": "在一天开始时自动接受可用的“需要帮助”任务。",
+	"config.show_notifications.title": "显示通知",
+	"config.show_notifications.tooltip": "接受任务时显示通知。",
+	"config.play_sound.title": "播放声音",
+	"config.play_sound.tooltip": "接受任务时播放声音。",
+	"config.ignore_friends.title": "忽略来自友好度已满的居民的任务。",
+	"config.ignore_friends.tooltip": "来自友好度达到满级的居民的“需要帮助”任务将被忽略。"
+}

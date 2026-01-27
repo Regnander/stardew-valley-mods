@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Yeni 'Yardım Aranıyor' ilanı",
+	"config.enable.title": "Etkinleştir",
+	"config.enable.tooltip": "Günün başlangıcında mevcut 'Yardım Aranıyor' ilanlarını otomatik olarak kabul eder.",
+	"config.show_notifications.title": "Bildirimi göster",
+	"config.show_notifications.tooltip": "Bir ilan kabul edildiğinde bildirim gösterir.",
+	"config.play_sound.title": "Ses çal",
+	"config.play_sound.tooltip": "Bir ilan kabul edildiğinde ses çalar.",
+	"config.ignore_friends.title": "Arkadaşlık seviyesi maksimum\nolan kasabalıların ilanlarını yoksay.",
+	"config.ignore_friends.tooltip": "Maksimum arkadaşlık seviyesine ulaştığınız kasabalıların 'Yardım Aranıyor' ilanları yoksayılacaktır."
+}

@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Új 'Felhívásos' kérés",
+	"config.enable.title": "Engedélyezés",
+	"config.enable.tooltip": "A nap kezdetén automatikusan elfogadja az elérhető 'Felhívásos' kéréseket.",
+	"config.show_notifications.title": "Értesítés megjelenítése",
+	"config.show_notifications.tooltip": "Értesítést jelenít meg egy kérés elfogadásakor.",
+	"config.play_sound.title": "Hang lejátszása",
+	"config.play_sound.tooltip": "Hangot játszik le egy kérés elfogadásakor.",
+	"config.ignore_friends.title": "Maximális barátsági szinttel\nrendelkező falusiak kéréseinek\nfigyelmen kívül hagyása",
+	"config.ignore_friends.tooltip": "A rendszer figyelmen kívül hagyja azon falusiak 'Felhívásos' kéréseit, akikkel elérted a maximális barátsági szintet."
+}

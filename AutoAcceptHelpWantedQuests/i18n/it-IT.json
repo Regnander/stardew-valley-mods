@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Nuova richiesta 'Cercasi Aiuto'",
+	"config.enable.title": "Abilitare",
+	"config.enable.tooltip": "Accetta automaticamente le richieste 'Cercasi Aiuto' disponibili all'inizio della giornata.",
+	"config.show_notifications.title": "Mostra notifica",
+	"config.show_notifications.tooltip": "Mostra una notifica quando una richiesta viene accettata.",
+	"config.play_sound.title": "Riproduci suono",
+	"config.play_sound.tooltip": "Riproduce un suono quando una richiesta viene accettata.",
+	"config.ignore_friends.title": "Ignora le richieste degli\nabitanti del villaggio med\ncui hai l'amicizia al massimo.",
+	"config.ignore_friends.tooltip": "Le richieste degli abitanti del villaggio con cui hai raggiunto l'amicizia massima saranno ignorate."
+}

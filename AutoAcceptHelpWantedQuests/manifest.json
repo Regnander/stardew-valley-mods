@@ -1,0 +1,10 @@
+{
+  "Name": "Auto-Accept 'Help Wanted' Quests",
+  "Author": "Regnander",
+  "Version": "1.0.0",
+  "Description": "Accepts any 'Help Wanted' quest automatically.",
+  "UniqueID": "regnander.Accept-Help-Wanted-Quests-Automatically",
+  "EntryDll": "autoaccepthelpwantedquests.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:0" ]
+}

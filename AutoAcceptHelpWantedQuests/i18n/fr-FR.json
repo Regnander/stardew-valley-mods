@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Nouvelle offre \"d'embauche\"",
+	"config.enable.title": "Activer",
+	"config.enable.tooltip": "Accepte automatiquement les offres d'embauche disponibles en début de journée.",
+	"config.show_notifications.title": "Afficher la notification",
+	"config.show_notifications.tooltip": "Affiche une notification lorsqu'une offre est acceptée.",
+	"config.play_sound.title": "Jouer un son",
+	"config.play_sound.tooltip": "Joue un son lorsqu'une offre est acceptée.",
+	"config.ignore_friends.title": "Ignorer les offres des villageois\navec une amitié maximale",
+	"config.ignore_friends.tooltip": "Les offres d'embauche des villageois avec qui vous avez atteint le niveau d'amitié maximum seront ignorées."
+}

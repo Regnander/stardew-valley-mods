@@ -1,0 +1,11 @@
+﻿{
+	"notification": "New 'Help Wanted' quest",
+	"config.enable.title": "Enable",
+	"config.enable.tooltip": "Accepts available 'help wanted' quests automatically in the beginning of the day.",
+	"config.show_notifications.title": "Display notification",
+	"config.show_notifications.tooltip": "Displays a notification when a quest is accepted.",
+	"config.play_sound.title": "Play sound",
+	"config.play_sound.tooltip": "Plays a sound when a quest is accepted.",
+	"config.ignore_friends.title": "Ignore quests from villagers\nwith full friendship",
+	"config.ignore_friends.tooltip": "Quests from villagers you have reached maximum friendship with will be ignored."
+}

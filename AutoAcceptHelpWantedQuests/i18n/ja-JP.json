@@ -1,0 +1,11 @@
+﻿{
+	"notification": "新しい「お手伝い」依頼",
+	"config.enable.title": "有効にする",
+	"config.enable.tooltip": "一日の始まりに、利用可能な「お手伝い」依頼を自動的に引き受けます。",
+	"config.show_notifications.title": "通知を表示",
+	"config.show_notifications.tooltip": "依頼が引き受けられた時に通知を表示します。",
+	"config.play_sound.title": "サウンドを再生",
+	"config.play_sound.tooltip": "依頼が引き受けられた時にサウンドを再生します。",
+	"config.ignore_friends.title": "友好度が最大の住人からの依頼を無視する",
+	"config.ignore_friends.tooltip": "友好度が最大に達した住人からの「お手伝い」依頼は無視されます。"
+}

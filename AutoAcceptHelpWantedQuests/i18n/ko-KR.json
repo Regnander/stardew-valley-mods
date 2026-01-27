@@ -1,0 +1,11 @@
+﻿{
+	"notification": "새로운 '도움 필요함' 요청",
+	"config.enable.title": "사용하다",
+	"config.enable.tooltip": "하루를 시작할 때 가능한 '도움 필요함' 요청을 자동으로 수락합니다.",
+	"config.show_notifications.title": "알림 표시",
+	"config.show_notifications.tooltip": "요청을 수락하면 알림을 표시합니다.",
+	"config.play_sound.title": "소리 재생",
+	"config.play_sound.tooltip": "요청을 수락하면 소리를 재생합니다.",
+	"config.ignore_friends.title": "호감도가 최대인 마을 사람들의\n요청 무시",
+	"config.ignore_friends.tooltip": "호감도가 최대치에 도달한 마을 사람들의 '도움 필요함' 요청은 무시됩니다."
+}

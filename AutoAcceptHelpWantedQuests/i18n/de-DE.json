@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Neue 'Aushilfe gesucht'-Anfrage",
+	"config.enable.title": "Aktivieren",
+	"config.enable.tooltip": "Nimmt verfügbare „Aushilfe gesucht“-Anfragen zu Beginn des Tages automatisch an.",
+	"config.show_notifications.title": "Benachrichtigung anzeigen",
+	"config.show_notifications.tooltip": "Zeigt eine Benachrichtigung an, wenn eine Anfrage angenommen wird.",
+	"config.play_sound.title": "Sound abspielen",
+	"config.play_sound.tooltip": "Spielt einen Sound ab, wenn eine Anfrage angenommen wird.",
+	"config.ignore_friends.title": "Anfragen von Dorfbewohnern mit\nmaximaler Freundschaft ignorieren",
+	"config.ignore_friends.tooltip": "Anfragen von Dorfbewohnern, mit denen du die maximale Freundschaft erreicht hast, werden ignoriert."
+}

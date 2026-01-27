@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Nueva petición de «Necesito ayuda»",
+	"config.enable.title": "Habilitar",
+	"config.enable.tooltip": "Acepta automáticamente las peticiones de «Necesito ayuda» disponibles al comienzo del día.",
+	"config.show_notifications.title": "Mostrar notificación",
+	"config.show_notifications.tooltip": "Muestra una notificación cuando se acepta una petición.",
+	"config.play_sound.title": "Reproducir sonido",
+	"config.play_sound.tooltip": "Reproduce un sonido cuando se acepta una petición.",
+	"config.ignore_friends.title": "Ignorar peticiones de aldeanos\ncon amistad al máximo.",
+	"config.ignore_friends.tooltip": "Las peticiones de los aldeanos con los que hayas alcanzado el nivel máximo de amistad serán ignoradas."
+}

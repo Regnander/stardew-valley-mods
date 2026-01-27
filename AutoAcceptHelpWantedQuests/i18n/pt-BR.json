@@ -1,0 +1,11 @@
+﻿{
+	"notification": "Nova solicitação de \"Precisa-se de Ajuda\"",
+	"config.enable.title": "Habilitar",
+	"config.enable.tooltip": "Aceita automaticamente as solicitações de \"Precisa-se de Ajuda\" disponíveis no início do dia.",
+	"config.show_notifications.title": "Exibir notificação",
+	"config.show_notifications.tooltip": "Exibe uma notificação quando uma solicitação é aceita.",
+	"config.play_sound.title": "Reproduzir som",
+	"config.play_sound.tooltip": "Reproduz um som quando uma solicitação é aceita.",
+	"config.ignore_friends.title": "Ignorar solicitações de aldeões\ncom amizade máxima.",
+	"config.ignore_friends.tooltip": "As solicitações de \"Precisa-se de Ajuda\" dos aldeões com quem você atingiu o nível máximo de amizade serão ignoradas."
+}
