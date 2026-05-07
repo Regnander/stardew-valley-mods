@@ -1,0 +1,13 @@
+{
+  "Name": "Move Backwoods Fence",
+  "Author": "Regnander",
+  "Version": "2.0",
+  "Description": "Removes parts of the fence in the backwoods area.",
+  "UniqueID": "regnander.MoveBackwoodsFence",
+  "MinimumApiVersion": "2.0",
+  "UpdateKeys": ["Nexus:45847"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.0.0"
+  }
+}

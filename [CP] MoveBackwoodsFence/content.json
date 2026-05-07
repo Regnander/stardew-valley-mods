@@ -1,0 +1,19 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Backwoods",
+      "FromFile": "assets/Backwoods_upper.tmx",
+      "FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 2 },
+      "ToArea": { "X": 22, "Y": 17, "Width": 3, "Height": 2 }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Backwoods",
+      "FromFile": "assets/Backwoods_lower.tmx",
+      "FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 3 },
+      "ToArea": { "X": 16, "Y": 21, "Width": 3, "Height": 3 }
+    }
+  ]
+}

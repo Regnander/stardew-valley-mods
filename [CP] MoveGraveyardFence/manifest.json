@@ -1,0 +1,13 @@
+{
+  "Name": "Move Graveyard Fence",
+  "Author": "Regnander",
+  "Version": "2.0",
+  "Description": "Moves the graveyard fence one tile to the left.",
+  "UniqueID": "regnander.MoveGraveyardFence",
+  "MinimumApiVersion": "2.0",
+  "UpdateKeys": ["Nexus:45610"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "2.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "FromFile": "assets/Town_mailbox.tmx",
+      "FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 2 },
+      "ToArea": { "X": 49, "Y": 62, "Width": 3, "Height": 2 }
+    }
+  ]
+}

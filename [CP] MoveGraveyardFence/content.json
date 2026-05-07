@@ -1,0 +1,12 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "FromFile": "assets/Town_fence.tmx",
+      "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 9 },
+      "ToArea": { "X": 52, "Y": 85, "Width": 2, "Height": 9 }
+    }
+  ]
+}
