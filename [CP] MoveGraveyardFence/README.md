@@ -17,4 +17,4 @@ Tired of bumping into the fence when traveling past the graveyard on your way to
 * [Move Mullner's Mailbox](https://www.nexusmods.com/stardewvalley/mods/45846)
 
 ## External links
-* [Source code](https://github.com/Regnander/stardew-valley-mods/tree/master/MoveGraveyardFence)
+* [Source code](https://github.com/Regnander/stardew-valley-mods/tree/master/[CP]%20MoveGraveyardFence)

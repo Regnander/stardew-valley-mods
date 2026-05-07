@@ -17,4 +17,4 @@ Tired of bumping into the fence while traveling between your farm and Robin's sh
 * [Move Mullner's Mailbox](https://www.nexusmods.com/stardewvalley/mods/45846)
 
 ## External links
-* [Source code](https://github.com/Regnander/stardew-valley-mods/tree/master/MoveBackwoodsFence)
+* [Source code](https://github.com/Regnander/stardew-valley-mods/tree/master/[CP]%20MoveBackwoodsFence)

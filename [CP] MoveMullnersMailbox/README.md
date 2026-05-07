@@ -20,4 +20,4 @@ George will be misaligned in Penny's two-heart event.
 * [Move the Graveyard Fence](https://www.nexusmods.com/stardewvalley/mods/45610)
 
 ## External links
-* [Source code](https://github.com/Regnander/stardew-valley-mods/tree/master/MoveMullnersMailbox)
+* [Source code](https://github.com/Regnander/stardew-valley-mods/tree/master/[CP]%20MoveMullnersMailbox)
