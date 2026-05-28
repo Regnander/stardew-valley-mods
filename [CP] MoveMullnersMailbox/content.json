@@ -3,9 +3,8 @@
   "Changes": [
     {
       "Action": "EditMap",
-      "Target": "Maps/Town",
+      "Target": "Maps/Town, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2",
       "FromFile": "assets/Town_mailbox.tmx",
-      "FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 2 },
       "ToArea": { "X": 49, "Y": 62, "Width": 3, "Height": 2 }
     }
   ]
