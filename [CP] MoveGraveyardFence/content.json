@@ -3,20 +3,60 @@
   "Changes": [
     {
       "Action": "EditMap",
-      "Target": "Maps/Town",
+      "Target": "Maps/Town, Maps/Town-Fair, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-Halloween, Maps/Town-Halloween2",
       "FromFile": "assets/Town_fence.tmx",
-      "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 9 },
-      "ToArea": { "X": 52, "Y": 85, "Width": 2, "Height": 9 }
+      "ToArea": { "X": 52, "Y": 85, "Width": 2, "Height": 9 },
+      "When": { "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false }
     },
     {
       "Action": "EditMap",
-      "Target": "Maps/Town",
+      "Target": "Maps/Town-EggFestival",
+      "FromFile": "assets/Town-EggFestival_fence.tmx",
+      "ToArea": { "X": 52, "Y": 85, "Width": 2, "Height": 9 },
+      "When": { "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town-EggFestival2",
+      "FromFile": "assets/Town-EggFestival2_fence.tmx",
+      "ToArea": { "X": 52, "Y": 85, "Width": 2, "Height": 9 },
+      "When": { "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town-Fair2",
+      "FromFile": "assets/Town-Fair2_fence.tmx",
+      "ToArea": { "X": 52, "Y": 85, "Width": 2, "Height": 9 },
+      "When": { "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false }
+    },
+    
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town, Maps/Town-Fair, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-Halloween, Maps/Town-Halloween2",
       "FromFile": "assets/Town_fence_SVE.tmx",
-      "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 10 },
-      "ToArea": { "X": 52, "Y": 84, "Width": 2, "Height": 10 },
-      "When": {
-        "HasMod": "FlashShifter.StardewValleyExpandedCP"
-      }
+      "ToArea": { "X": 52, "Y": 84, "Width": 2, "Height": 9 },
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town-EggFestival",
+      "FromFile": "assets/Town-EggFestival_fence_SVE.tmx",
+      "ToArea": { "X": 52, "Y": 84, "Width": 2, "Height": 9 },
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town-EggFestival2",
+      "FromFile": "assets/Town-EggFestival2_fence_SVE.tmx",
+      "ToArea": { "X": 52, "Y": 84, "Width": 2, "Height": 9 },
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town-Fair2",
+      "FromFile": "assets/Town-Fair2_fence_SVE.tmx",
+      "ToArea": { "X": 52, "Y": 84, "Width": 2, "Height": 9 },
+      "When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
     }
   ]
 }
