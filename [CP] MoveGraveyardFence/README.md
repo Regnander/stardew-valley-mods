@@ -10,6 +10,9 @@ Tired of bumping into the fence when traveling past the graveyard on your way to
 2. Download this mod and unzip it into your **Stardew Valley/Mods** folder.
 3. Run the game using SMAPI.
 
+## Known issues
+The lantern beside the right-most gravestone gets placed on top of the fence in [Stardew Valley Expanded](https://www.nexusmods.com/stardewvalley/mods/3753).
+
 ## See also
 
 * [Bus Stop Sign Moved One Tile Up](https://www.nexusmods.com/stardewvalley/mods/6716)
