@@ -1,0 +1,15 @@
+﻿{
+    "config.title.traveling_methods": "Travel methods",
+    "config.enable_minecarts.title": "Minecarts",
+    "config.enable_minecarts.tooltip": "When this setting is enabled, your horse will warp with you when using minecarts.",
+    "config.enable_parrot_platforms.title": "Parrot Express",
+    "config.enable_parrot_platforms.tooltip": "When this setting is enabled, your horse will warp with you when using the Parrot Express.",
+    "config.title.other_settings": "Other settings",
+    "config.max_horse_distance.title": "Max distance",
+    "config.max_horse_distance.tooltip": "Determines the maximum distance (in tiles) your horse can be from you to warp alongside you.",
+    "config.allow_indoors_locations.title": "Allow indoor destinations",
+    "config.allow_indoors_locations.tooltip": "When this settings is enabled, the player horse will be warped into indoor locations.",
+    "log.error.horse_warp": "Unable to warp your horse to the '{0}' location.",
+    "log.error.loading_settings": "Unable to load the '{0}' setting; default value of {1} is used instead.",
+    "log.error.outdoor_destination": "Unable to determine whether or not '{0}' is an outdoor location."
+}

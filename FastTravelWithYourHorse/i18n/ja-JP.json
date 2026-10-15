@@ -1,0 +1,15 @@
+﻿{
+	"config.title.traveling_methods": "移動方法",
+	"config.enable_minecarts.title": "トロッコ",
+	"config.enable_minecarts.tooltip": "この設定が有効な場合、トロッコを使用すると馬も一緒にワープします。",
+	"config.enable_parrot_platforms.title": "オウム特急便",
+	"config.enable_parrot_platforms.tooltip": "この設定が有効な場合、ジンジャーアイランドでオウム特急便を使用すると馬も一緒にワープします。",
+	"config.title.other_settings": "その他の設定",
+	"config.max_horse_distance.title": "最大距離",
+	"config.max_horse_distance.tooltip": "一緒にワープできる馬との最大距離（タイル/マス数）を設定します。",
+	"config.allow_indoors_locations.title": "屋内の目的地を許可",
+	"config.allow_indoors_locations.tooltip": "この設定が有効な場合、目的地が屋内であっても馬が一緒にワープします。",
+	"log.error.horse_warp": "馬を場所「{0}」にワープさせることができませんでした。",
+	"log.error.loading_settings": "設定「{0}」を読み込めませんでした。代わりにデフォルト値の {1} を使用します。",
+	"log.error.outdoor_destination": "「{0}」が屋外の場所かどうかを判定できませんでした。"
+}

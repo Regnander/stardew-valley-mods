@@ -1,0 +1,15 @@
+﻿{
+	"config.title.traveling_methods": "Ulaşım Yöntemleri",
+	"config.enable_minecarts.title": "Maden Arabaları",
+	"config.enable_minecarts.tooltip": "Bu ayar etkinleştirildiğinde, maden arabalarını kullanırken atınız sizinle birlikte ışınlanır.",
+	"config.enable_parrot_platforms.title": "Papağan Ekspresi",
+	"config.enable_parrot_platforms.tooltip": "Bu ayar etkinleştirildiğinde, Zencefil Adası'nda Papağan Ekspresi'ni kullanırken atınız sizinle birlikte ışınlanır.",
+	"config.title.other_settings": "Diğer Ayarlar",
+	"config.max_horse_distance.title": "Maksimum Mesafe",
+	"config.max_horse_distance.tooltip": "Atınızın sizinle birlikte ışınlanabilmesi için aranızdaki maksimum mesafeyi (kare cinsinden) belirler.",
+	"config.allow_indoors_locations.title": "İç Mekan Varış Noktalarına Işınlanma",
+	"config.allow_indoors_locations.tooltip": "Bu ayar etkinleştirildiğinde, varış noktanız iç mekanda olsa bile atınız sizinle birlikte ışınlanır.",
+	"log.error.horse_warp": "Atınız '{0}' konumuna ışınlanamadı.",
+	"log.error.loading_settings": "'{0}' ayarı yüklenemedi; bunun yerine varsayılan değer olan {1} kullanılacak.",
+	"log.error.outdoor_destination": "'{0}' konumunun açık alan olup olmadığı belirlenemedi."
+}

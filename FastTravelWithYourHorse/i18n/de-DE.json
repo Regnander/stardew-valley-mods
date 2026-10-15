@@ -1,0 +1,15 @@
+﻿{
+    "config.title.traveling_methods": "Reisemethoden",
+    "config.enable_minecarts.title": "Loren",
+    "config.enable_minecarts.tooltip": "Wenn diese Einstellung aktiviert ist, wird dein Pferd mit dir teleportiert, wenn du Loren benutzt.",
+    "config.enable_parrot_platforms.title": "Papageien-Express",
+    "config.enable_parrot_platforms.tooltip": "Wenn diese Einstellung auf der Ingwerinsel aktiviert ist, wird dein Pferd mit dir teleportiert, wenn du den Papageien-Express benutzt.",
+    "config.title.other_settings": "Sonstige Einstellungen",
+    "config.max_horse_distance.title": "Maximale Distanz",
+    "config.max_horse_distance.tooltip": "Bestimmt die maximale Entfernung (in Feldern), die dein Pferd von dir entfernt sein darf, um mit dir teleportiert zu werden.",
+    "config.allow_indoors_locations.title": "Innenbereiche erlauben",
+    "config.allow_indoors_locations.tooltip": "Wenn diese Einstellung aktiviert ist, wird dein Pferd auch dann mit dir teleportiert, wenn dein Ziel im Innenbereich liegt.",
+    "log.error.horse_warp": "Dein Pferd konnte nicht an den Ort '{0}' teleportiert werden.",
+    "log.error.loading_settings": "Die Einstellung '{0}' konnte nicht geladen werden; stattdessen wird der Standardwert {1} verwendet.",
+    "log.error.outdoor_destination": "Es konnte nicht festgestellt werden, ob '{0}' ein Außenbereich ist."
+}
