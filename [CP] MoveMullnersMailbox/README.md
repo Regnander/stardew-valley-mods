@@ -1,6 +1,6 @@
 # Move Mullner's Mailbox
 
-***Note: This mod has only been tested on local multiplayer.***
+***Note: This mod has only been tested in local multiplayer.***
 
 Tired of bumping into Evelyn, George and Alex's mailbox while navigating past 1 River Road? This mod moves the mailbox two tiles to the right, tucking it neatly next to the trash can.
 

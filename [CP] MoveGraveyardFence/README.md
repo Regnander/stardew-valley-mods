@@ -1,6 +1,6 @@
 # Move the Graveyard Fence
 
-***Note: This mod has only been tested on local multiplayer.***
+***Note: This mod has only been tested in local multiplayer.***
 
 Tired of bumping into the fence when traveling past the graveyard on your way to the beach? This mod will move the entire fence one tile to the left.
 

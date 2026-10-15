@@ -1,6 +1,6 @@
 ﻿# Unlock Casks Without a Cellar
 
-***Note: This mod has only been tested on local multiplayer.***
+***Note: This mod has only been tested in local multiplayer.***
 
 Want to start aging wine and cheese, but love your house just the way it is? Instead of being forced to expand your home, this mod allows you to unlock Casks by reaching skill levels of your choice.
 

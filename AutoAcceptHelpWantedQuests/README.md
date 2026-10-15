@@ -1,6 +1,6 @@
 ﻿# Auto-Accept 'Help Wanted' Quests
 
-***Note: This mod has only been tested on local multiplayer.***
+***Note: This mod has only been tested in local multiplayer.***
 
 Tired of making the daily trek to Pierre’s General Store just to check the bulletin board? This mod streamlines your gameplay by automatically adding daily "Help Wanted" quests directly to your journal the moment you wake up.
 

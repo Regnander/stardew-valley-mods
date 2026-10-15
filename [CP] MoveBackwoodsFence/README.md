@@ -1,6 +1,6 @@
 # Move the Backwoods Fence
 
-***Note: This mod has only been tested on local multiplayer.***
+***Note: This mod has only been tested in local multiplayer.***
 
 Tired of bumping into the fence while traveling between your farm and Robin's shop? This mod will remove the sharp fence corners from the backwoods area.
 
