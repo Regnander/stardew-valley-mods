@@ -163,13 +163,14 @@ namespace FastTravelWithYourHorse
         /// player's tile; otherwise, false.</returns>
         private static bool CanHorseBePlaced(GameLocation location, Vector2 horseDestination, Vector2 playerTile)
         {
+            // Checking the destination tile and one tile to the right, since horses take up two horizontal tiles.
             Vector2 horseDestination2 = new(horseDestination.X + 1, horseDestination.Y);
 
-            // Checking the given tile as well as the tile to the left, since horses take up two horizontal tiles.
-            bool primaryTileOccupied = location.IsTileOccupiedBy(horseDestination) || horseDestination.Equals(playerTile);
-            bool secondaryTileOccupied = location.IsTileOccupiedBy(horseDestination2) || horseDestination2.Equals(playerTile);
+            bool isTileOccupied = location.IsTileOccupiedBy(horseDestination) || location.IsTileOccupiedBy(horseDestination2);
+            bool isPlayerAtTile = horseDestination.Equals(playerTile) || horseDestination2.Equals(playerTile);
+            bool isTileBlocked = location.IsTileBlockedBy(horseDestination) || location.IsTileBlockedBy(horseDestination2);
 
-            return !primaryTileOccupied && !secondaryTileOccupied;
+            return !isTileOccupied && !isPlayerAtTile && !isTileBlocked;
         }
 
         /// <summary>
