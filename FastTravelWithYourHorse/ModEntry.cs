@@ -20,6 +20,8 @@ namespace FastTravelWithYourHorse
         /// <summary>The mod configuration from the player.</summary>
         private static ModConfig Config;
         public static ModEntry Instance { get; private set; } = null!;
+        private static Point busStopDestinationTile = new(23, 10);
+        private static Point desertDestinationTile = new(22, 28);
 
         /*********
         ** Public methods
@@ -43,6 +45,16 @@ namespace FastTravelWithYourHorse
                 harmony.Patch(
                    original: AccessTools.Method(typeof(IslandLocation), nameof(IslandLocation.answerDialogue)),
                    postfix: new HarmonyMethod(typeof(ModEntry), nameof(AnswerDialogue_Postfix))
+                );
+
+                harmony.Patch(
+                   original: AccessTools.Method(typeof(BusStop), "playerReachedBusDoor"),
+                   prefix: new HarmonyMethod(typeof(ModEntry), nameof(BusStop_PlayerReachedBusDoor_Prefix))
+                );
+
+                harmony.Patch(
+                   original: AccessTools.Method(typeof(Desert), "playerReachedBusDoor"),
+                   prefix: new HarmonyMethod(typeof(ModEntry), nameof(Desert_PlayerReachedBusDoor_Prefix))
                 );
             }
             catch (Exception e)
@@ -79,7 +91,8 @@ namespace FastTravelWithYourHorse
                 KeyValuePair<string, KeyValuePair<string, Point>> islandDestination = ParrotPlatform.GetDestinations()
                     .FirstOrDefault(destination => ("Go" + destination.Key) == answer.responseKey);
 
-                TeleportHorse(horse, farmer, islandDestination.Value.Key, islandDestination.Value.Value);
+                // Teleports horse to the given destination.
+                TeleportHorse(horse, farmer.Tile, islandDestination.Value.Key, islandDestination.Value.Value);
             }
             catch (Exception) { PrintLog(GetLocalizedString("log.error.horse_warp", answer.responseText)); }
         }
@@ -103,9 +116,44 @@ namespace FastTravelWithYourHorse
             if (horse == null) return;
 
             // Teleports horse to the given destination.
-            try { TeleportHorse(horse, farmer, destination.TargetLocation, destination.TargetTile); }
+            try { TeleportHorse(horse, farmer.Tile, destination.TargetLocation, destination.TargetTile); }
             catch (Exception) { PrintLog(GetLocalizedString("log.error.horse_warp", destination.DisplayName)); }
         }
+
+        /// <summary>
+        /// Warps the player's horse from the bus stop to the desert when the player reaches the bus door.
+        /// </summary>
+        /// <param name="__instance">The bus stop location where the player reached the bus door.</param>
+        private static void BusStop_PlayerReachedBusDoor_Prefix(BusStop __instance) => PlayerReachedBusDoor_Prefix(__instance, desertDestinationTile, "Desert");
+
+        /// <summary>
+        /// Warps the player's horse from the desert to the bus stop when the player reaches the bus door.
+        /// </summary>
+        /// <param name="__instance">The desert location where the player reached the bus door.</param>
+        private static void Desert_PlayerReachedBusDoor_Prefix(Desert __instance) => PlayerReachedBusDoor_Prefix(__instance, busStopDestinationTile, "BusStop");
+
+        /// <summary>
+        /// Warps the player's horse to the specified bus destination when bus travel is enabled and the horse is nearby.
+        /// </summary>
+        /// <param name="gameLocation">The location where the player reached the bus door.</param>
+        /// <param name="destinationTile">The tile to use as the horse's destination.</param>
+        /// <param name="destinationName">The name of the destination location.</param>
+        private static void PlayerReachedBusDoor_Prefix(GameLocation gameLocation, Point destinationTile, string destinationName)
+        {
+            // Checking if the bus to Calico Desert has been disabled in the settings.
+            if (!Config.EnableBus) return;
+
+            Farmer farmer = Game1.player;
+            Horse? horse = GetHorse(farmer, gameLocation);
+
+            // Checking if no horse is found in the same area as the player.
+            if (horse == null) return;
+
+            // Teleports horse to the given destination.
+            try { TeleportHorse(horse, farmer.Tile, destinationName, destinationTile); }
+            catch (Exception) { PrintLog(GetLocalizedString("log.error.horse_warp", destinationName)); }
+        }
+
 
         /// <summary>
         /// Determines whether a festival is taking place at the specified destination today.
@@ -118,19 +166,19 @@ namespace FastTravelWithYourHorse
         /// Warps the horse to a destination when it is nearby and the destination is accessible under the current settings.
         /// </summary>
         /// <param name="horse">The horse to warp.</param>
-        /// <param name="farmer">The farmer who owns the horse.</param>
+        /// <param name="farmerTile">The tile of the farmer who owns the horse.</param>
         /// <param name="destinationName">The name of the destination location.</param>
         /// <param name="destinationTile">The destination tile used to calculate a safe arrival position.</param>
-        private static void TeleportHorse(Horse horse, Farmer farmer, String destinationName, Point destinationTile)
+        private static void TeleportHorse(Horse horse, Vector2 farmerTile, String destinationName, Point destinationTile)
         {
             float maxDistance = 4;
             bool isIndoorsAllowed = false;
-            float horseToPlayerDistance = Vector2.Distance(farmer.Tile, horse.Tile);
+            float horseToPlayerDistance = Vector2.Distance(farmerTile, horse.Tile);
 
             // Loading user settings.
             try { maxDistance = Config.MaxHorseDistance; }
             catch (Exception) { PrintLog(GetLocalizedString("log.error.loading_settings", "MaxHorseDistance", maxDistance)); }
-            try { isIndoorsAllowed = Config.IndoorsAllowed; }
+            try { isIndoorsAllowed = Config.AllowIndoorsLocations; }
             catch (Exception) { PrintLog(GetLocalizedString("log.error.loading_settings", "IndoorsAllowed", isIndoorsAllowed)); }
 
             try
@@ -166,11 +214,52 @@ namespace FastTravelWithYourHorse
             // Checking the destination tile and one tile to the right, since horses take up two horizontal tiles.
             Vector2 horseDestination2 = new(horseDestination.X + 1, horseDestination.Y);
 
-            bool isTileOccupied = location.IsTileOccupiedBy(horseDestination) || location.IsTileOccupiedBy(horseDestination2);
-            bool isPlayerAtTile = horseDestination.Equals(playerTile) || horseDestination2.Equals(playerTile);
-            bool isTileBlocked = location.IsTileBlockedBy(horseDestination) || location.IsTileBlockedBy(horseDestination2);
+            // Other players' horses
+            bool isTileBlockedByHorse = IsTileBlockedByHorse(location, horseDestination, horseDestination2);
+            // Player destination
+            bool isTileBlockedByPlayer = horseDestination.Equals(playerTile) || horseDestination2.Equals(playerTile);
 
-            return !isTileOccupied && !isPlayerAtTile && !isTileBlocked;
+            // Farm buildings
+            bool isTileBlockedByBuilding = IsTileOccupied(location, horseDestination, horseDestination2, CollisionMask.Buildings);
+            // Chairs, carpets
+            bool isTileBlockedByFurniture = IsTileOccupied(location, horseDestination, horseDestination2, CollisionMask.Furniture);
+            // Machines
+            bool isTileBlockedByObject = IsTileOccupied(location, horseDestination, horseDestination2, CollisionMask.Objects);
+            // Shrubs, trees
+            bool isTileBlockedByTerrainFeature = IsTileOccupied(location, horseDestination, horseDestination2, CollisionMask.TerrainFeatures);
+
+            return !isTileBlockedByHorse && !isTileBlockedByPlayer && !isTileBlockedByBuilding
+                && !isTileBlockedByFurniture && !isTileBlockedByObject && !isTileBlockedByTerrainFeature;
+        }
+
+        /// <summary>
+        /// Determines whether either of the horse's destination tiles is occupied by the specified type of object or terrain.
+        /// </summary>
+        /// <param name="location">The location in which to check tile occupancy.</param>
+        /// <param name="horseDestination">The horse's first destination tile.</param>
+        /// <param name="horseDestination2">The horse's adjacent second destination tile.</param>
+        /// <param name="mask">The collision categories to check.</param>
+        /// <returns><see langword="true"/> if either tile is occupied for the specified collision categories; otherwise, <see langword="false"/>.</returns>
+        private static bool IsTileOccupied(GameLocation location, Vector2 horseDestination, Vector2 horseDestination2, CollisionMask mask) => location.IsTileOccupiedBy(horseDestination, mask) || location.IsTileOccupiedBy(horseDestination2, mask);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="location"></param>
+        /// <param name="horseDestination"></param>
+        /// <param name="horseDestination2"></param>
+        /// <returns></returns>
+        private static bool IsTileBlockedByHorse(GameLocation location, Vector2 horseDestination, Vector2 horseDestination2)
+        {
+            foreach (NPC character in location.characters)
+            {
+                if (character is Horse)
+                {
+                    return character.Tile.Equals(horseDestination) || character.Tile.Equals(horseDestination2);
+                }
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -318,10 +407,19 @@ namespace FastTravelWithYourHorse
             // Adding parrot express option.
             configMenu.AddBoolOption(
                 mod: this.ModManifest,
-                name: () => GetLocalizedString("config.enable_parrot_platforms.title"),
-                tooltip: () => GetLocalizedString("config.enable_parrot_platforms.tooltip"),
+                name: () => GetLocalizedString("config.enable_parrot_express.title"),
+                tooltip: () => GetLocalizedString("config.enable_parrot_express.tooltip"),
                 getValue: () => Config.EnableParrotExpress,
                 setValue: value => Config.EnableParrotExpress = value
+            );
+
+            // Adding bus option.
+            configMenu.AddBoolOption(
+                mod: this.ModManifest,
+                name: () => GetLocalizedString("config.enable_bus.title"),
+                tooltip: () => GetLocalizedString("config.enable_bus.tooltip"),
+                getValue: () => Config.EnableBus,
+                setValue: value => Config.EnableBus = value
             );
 
             configMenu.AddSectionTitle(
@@ -345,8 +443,14 @@ namespace FastTravelWithYourHorse
                 mod: this.ModManifest,
                 name: () => GetLocalizedString("config.allow_indoors_locations.title"),
                 tooltip: () => GetLocalizedString("config.allow_indoors_locations.tooltip"),
-                getValue: () => Config.IndoorsAllowed,
-                setValue: value => Config.IndoorsAllowed = value
+                getValue: () => Config.AllowIndoorsLocations,
+                setValue: value => Config.AllowIndoorsLocations = value
+            );
+
+            // Adding warning text.
+            configMenu.AddParagraph(
+                mod: this.ModManifest,
+                text: () => GetLocalizedString("config.allow_indoors_locations.warning")
             );
 
         }

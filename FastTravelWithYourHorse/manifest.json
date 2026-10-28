@@ -2,7 +2,7 @@
     "Name": "Fast Travel with your Horse",
     "Author": "Regnander",
     "Version": "1.0.0",
-    "Description": "Allows you to bring your horse when using minecarts and the parrot express.",
+    "Description": "Allows you to bring your horse when using minecarts and other means of transportation.",
     "UniqueID": "regnander.fast-travel-with-your-horse",
     "EntryDll": "fasttravelwithyourhorse.dll",
     "MinimumApiVersion": "4.0.0",
